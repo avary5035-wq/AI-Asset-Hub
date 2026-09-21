@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8fafc; color: #17202b; font-family: Arial, Helvetica, sans-serif; }
+button, input { font: inherit; }
+::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-thumb { background: #d6dce5; border-radius: 8px; }
+@layer components { .panel { @apply rounded-xl border border-line bg-white shadow-soft; } .nav-item { @apply flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-500 transition hover:bg-slate-100 hover:text-slate-900; } .nav-active { @apply bg-blue-50 text-blue-700; } .pill { @apply inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2 py-1 text-xs text-slate-600; } .button { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:opacity-50; } .icon-button { @apply grid h-9 w-9 place-items-center rounded-lg border border-slate-200 bg-white text-slate-500 transition hover:bg-slate-50 hover:text-slate-900; } }
